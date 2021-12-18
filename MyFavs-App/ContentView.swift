@@ -9,10 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
-            
+            List{
+                ForEach(allFavorites) { favorite in
+                    Section(header: Text(favorite.title)) {
+                        ForEach(favorite.elements){ element in
+                            Text(element.name)
+                            
+                        }
+                    }
+                    
+                }
+            }
         }
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {

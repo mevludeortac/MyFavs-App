@@ -21,13 +21,15 @@ struct FavoriteElements: Identifiable {
 }
 //BANDS
 let hedonutopia = FavoriteElements(name: "Hedonutopia", imageName: "hedon", description: "number one")
-let gevende = FavoriteElements(name: "gevende", imageName: "gevende", description: "number two")
+let gevende = FavoriteElements(name: "Gevende", imageName: "gevende", description: "number two")
 let oscarAndTheWolf = FavoriteElements(name: "Oscar And The Wolf", imageName: "oscar", description: "number three")
 
 let favoriteBands = FavoriteModel(title: "Favorite Bands", elements: [hedonutopia, gevende, oscarAndTheWolf])
 
 let yazgi = FavoriteElements(name: "Yazgi", imageName: "yazgi", description: "number one")
 let yeralti = FavoriteElements(name: "Yeraltı", imageName: "yeralti", description: "number two")
-let kader = FavoriteElements(name: "kader", imageName: "kader", description: "numbre three")
+let kader = FavoriteElements(name: "Kader", imageName: "kader", description: "numbre three")
 
 let favoriteMovie = FavoriteModel(title: "Favorie Movies", elements: [yazgi, yeralti, kader])
+
+let allFavorites = [favoriteBands, favoriteMovie]
